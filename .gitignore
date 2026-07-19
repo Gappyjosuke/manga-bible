@@ -1,0 +1,23 @@
+# Python Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Python Cache and Compiles
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Development Tools and Linters Cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# VS Code Personal Settings
+.vscode/
+
+# Build and Distribution Artifacts
+build/
+dist/
+*.egg-info/
