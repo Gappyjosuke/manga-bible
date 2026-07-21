@@ -38,3 +38,20 @@
 
 ### Plan for next session:
 - Implement `ProjectHubView`, `ProjectHubController`, and `ProjectService`.
+
+## July 21, 2026
+**Current Phase:** Sprint 3 - Domain Layer & Repository Pattern
+
+### What I did today:
+- Documented feature design contract in `docs/decisions/feature-create-project.md`.
+- Implemented the pure Python domain model `Project` (`src/mangabible/models/project.py`), completely decoupled from PySide6.
+- Established `ADR-0004-project-persistence.md` defining the Repository Pattern for file storage separation.
+- Implemented `ProjectRepository` (`src/mangabible/repositories/project_repository.py`) to manage filesystem scaffolding and `.mbproj` manifest generation.
+- Added comprehensive unit test coverage in `tests/test_project_model.py` and `tests/test_project_repository.py` using `pytest`'s `tmp_path` fixture.
+- Configured `pyproject.toml` pythonpath settings for seamless test collection.
+
+### Issues faced:
+- Resolved `pytest` import errors by configuring explicit `src` resolution under `[tool.pytest.ini_options]`.
+
+### Plan for next session:
+- Implement `ProjectService` to encapsulate project creation and validation business rules (Milestone 3.2).

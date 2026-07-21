@@ -3,8 +3,8 @@ from pathlib import Path
 
 
 def find_project_root() -> Path:
-    """Climbs up from the current file path to dynamically find the project root folder.
-    """
+    """Climbs up from the current file path to dynamically
+    find the project root folder"""
     current = Path(__file__).resolve()
     for parent in current.parents:
         if (parent / "pyproject.toml").exists():

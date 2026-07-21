@@ -42,6 +42,9 @@ disallow_untyped_defs = true
 [tool.pytest.ini_options]
 minversion = "7.0"
 addopts = "-ra -q"
+pythonpath = [
+    "src"
+]
 testpaths = [
     "tests",
 ]
